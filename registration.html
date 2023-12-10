@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css.css" rel="stylesheet"/>
+    <script src="JS1.js"></script>
+    <script src="JS2.js"></script>
+    <title>REGISTRATION</title>
+  </head>
+  <body>
+    <div class="container">
+    <form action="/register" method="POST">
+      <center><h1>REGISTRATION</h1></center>
+      <p><h6>REQUIRED FIELDS ARE FOLLOWED BY *</h6></p>
+      <p><h3>FIRST NAME: *</h3>
+        <input type="text" name="FIRST NAME" required />
+      </p>
+      <p><h3>MIDDLE NAME: </h3>
+        <input type="text" name="MIDDLE NAME" required />
+      </p>
+      <p><h3>LAST NAME: *</h3>
+        <input type="'text" name="LAST NAME" required />
+      </p>
+      <p><h3>GENDER: *</h3></p>
+      <fieldset>
+        <p>
+          MALE *<input
+            type="radio"
+            name="gender"
+            id="male"
+            required
+          />FEMALE *<input type="radio" name="gender" id="female" required />
+        </p>
+      </fieldset>
+      <p>
+        <h3>ADDRESS: *</h3><textarea
+          name="address"
+          id="address "
+          cols="100"
+          rows="2"
+          required
+        ></textarea>
+      </p>
+      <p><h3>EMAIL : </h3><input type="email" name="email" id="email" /></p>
+      <p><h3>PINCODE :</h3> <input type="number" name="pincode" id="pincode" /></p>
+      <p><h3>MOBILE NUMBER :</h3>
+        <input type="number" name="mob.  no. " id="mobile number" required />
+        <option value="">--number should not be less than 10--</option>
+      </p>
+      <hr />
+
+      <p>PASSWORD* <input type="password" name="PASSWORD" required /></p>
+      <input type="SUBMIT" value="SUBMIT" />
+    </form>
+  </div>
+  </body>
+</html>
